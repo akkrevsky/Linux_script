@@ -1,0 +1,11 @@
+config:
+    - to hex
+    avr-objcopy -O ihex main.o main.hex
+    - to prog
+    sudo avrdude -V -p m328p -c stk500v1 -P /dev/ttyUSB2 -b 57600 -U flash:w:main.hex
+    
+#!/bin/bash 
+
+avr-gcc -mmcu=atmega328p /home/sp/git/avr_robot/build/Debug/avr-Linux/main.o -o /home/sp/git/avr_robot/build/Debug/avr-Linux/main
+avr-objcopy -O ihex -R .eeprom /home/sp/git/avr_robot/build/Debug/avr-Linux/main /home/sp/git/avr_robot/build/Debug/avr-Linux/main.hex
+avrdude -V -F -p atmega328p -P /dev/ttyUSB0 -c stk500v1 -b 57600 -U flash:w:/home/sp/git/avr_robot/build/Debug/avr-Linux/main.hex

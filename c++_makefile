@@ -1,0 +1,11 @@
+#!/bin/bash
+
+gcc main.cpp map.cpp -o run
+./run
+
+g++ -E test_point.cpp -o test_point.ii
+g++ -S test_point.ii -o driver.s
+as driver.s -o driver.o
+g++ driver.o -o driver
+
+./driver

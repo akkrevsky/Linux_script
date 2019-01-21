@@ -1,0 +1,4 @@
+mkdir -p /mnt/disk
+sudo mount -o loop /path/to/disk1.iso /mnt/disk
+
+sudo umount /path/to/disk1.iso

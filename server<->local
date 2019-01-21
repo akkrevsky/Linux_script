@@ -1,0 +1,6 @@
+#!/bin/bash
+
+to local
+	rsync -r -t -v --progress --delete -z -s root@cub.hldns.ru:/mnt/sync/ /home/sp/sync/
+to server:
+	rsync -r -t -v --progress --delete -z -s /home/sp/sync/ root@cub.hldns.ru:/mnt/sync/

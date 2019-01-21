@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -r -t -v --progress --delete -z -s root@cub.hldns.ru:/mnt/sync/ /home/sp/sync/

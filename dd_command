@@ -1,0 +1,5 @@
+iso:
+    -write iso on sd:
+        sudo dd if=/home/sp/ubuntu.img of=/dev/mmcblk0 tatus=progress conv=fsync bs=1M
+    -back up
+        sudo dd of=/home/sp/clear_ssh_ubuntu.img if=/dev/mmcblk0 status=progress conv=fsync bs=4M

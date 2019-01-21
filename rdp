@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rdesktop cub.hldns.ru -u splash -p **** -x 0x80 -g 1024x768

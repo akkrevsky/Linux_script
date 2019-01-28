@@ -1,0 +1,1 @@
+d:\sync\config\script\psshutdown.exe -d -t 00

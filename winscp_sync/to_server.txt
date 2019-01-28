@@ -1,0 +1,11 @@
+option batch abort
+option confirm off
+
+#open sftp
+#open sftp://cubie@copycat.hldns.ru:22 -privatekey=d:\sync\config\key\ssh\my_key.ppk -timeout=60
+open "cubie_inet"
+
+#sync file's
+synchronize -criteria=either -transfer=binary -delete -mirror remote d:\sync /mnt/sync
+
+exit

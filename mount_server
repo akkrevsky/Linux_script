@@ -1,0 +1,8 @@
+#!/bin/bash
+sshfs root@cub.hldns.ru:/ /home/sp/data/server
+#sshfs pi@192.168.1.102:/home/raspberry /home/sp/data/server_raspberry
+#
+#sshfs orangepi@94.190.117.238:/mnt /home/sp/data/server_max
+#sshfs raspberry@192.168.1.101:/home/raspberry /home/sp/data/server_raspberry
+#sshfs root@192.168.1.103:/media /home/sp/data/server_cubie
+#sshfs krevsky@192.168.1.107:/ /home/sp/data/father_note

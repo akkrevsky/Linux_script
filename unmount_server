@@ -1,7 +1,2 @@
 #!/bin/bash
 fusermount -u /home/sp/data/server
-#fusermount -u /home/sp/data/server_raspberry
-
-#fusermount -u /home/sp/data/server_max
-#fusermount -u /home/sp/data/server_cubie
-#fusermount -u /home/sp/data/father_note

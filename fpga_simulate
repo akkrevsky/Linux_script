@@ -1,0 +1,4 @@
+#!/bin/bash
+iverilog -o out counter.v counter_tb.v
+vvp out
+gtkwave out.vcd
